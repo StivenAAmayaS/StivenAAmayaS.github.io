@@ -1,3 +1,9 @@
+:root {
+    --bg-cl-body: #0d1117;
+    --bg-cl-navbar: #010409;
+    
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +11,41 @@
 }
 
 body {
-    background: #0F2C59;
+    background-color: var(--bg-cl-body);
+    color: #e6edf3;
+}
+
+a {
+    text-decoration: none;
+    color: #e6edf3;
+    padding: 4px 14px;
+    border-radius: 10px;
+    display: flex;
+    gap: 4px;
+    text-align: center; 
+}
+
+a:hover {
+    background-color: #30363d;
+}
+
+ion-icon {
+    color: #e6edf3;
+}
+
+
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navbar {
+    width: 100%;
+    background-color: var(--bg-cl-navbar);
+    padding: 10px 35px;
+    display: flex;
+    justify-content: space-between;
+
 }
